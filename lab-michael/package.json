@@ -5,8 +5,22 @@
   "main": "index.js",
   "repository": "https://github.com/silvershotm1/lab-21-intro-to-angular-webpack",
   "scripts": {
-    "build": "webpack"
-  },
+    "build": "webpack",
+    "watch": "webpack-dev-server --inline --hot"
+},
   "author": "Michael Bishop",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.6.1",
+    "cowsay-browser": "^1.1.8",
+    "css-loader": "^0.26.1",
+    "html-webpack-plugin": "^2.28.0",
+    "node-sass": "^4.5.0",
+    "sass-loader": "^4.1.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^2.2.1"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^1.16.3"
+  }
 }
