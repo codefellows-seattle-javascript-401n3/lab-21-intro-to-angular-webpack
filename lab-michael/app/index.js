@@ -20,7 +20,7 @@ function CowsayController($log, $scope) {
 
   cowsayCtrl.updateCow = function(input){
     $log.debug('cowsayCtrl.updateCow()');
-    return '\n' + cowsay.say({text: input || 'gimme something to say'});
+    return '\n' + cowsay.say({text: input || 'Eat Mor Chikin'});
   };
 
   cowsayCtrl.helloClick = function(input){
