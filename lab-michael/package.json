@@ -6,8 +6,9 @@
   "repository": "https://github.com/silvershotm1/lab-21-intro-to-angular-webpack",
   "scripts": {
     "build": "webpack",
-    "watch": "webpack-dev-server --inline --hot"
-},
+    "watch": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot",
+    "start": "live-server"
+  },
   "author": "Michael Bishop",
   "license": "MIT",
   "dependencies": {
