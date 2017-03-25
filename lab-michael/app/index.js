@@ -25,7 +25,9 @@ function CowsayController($log, $scope) {
 
   cowsayCtrl.helloClick = function(input){
     $log.debug('cowsayCtrl.helloClick()');
-    $log.log(input);
+    return '\n' + cowsay.say({text: input});
+    // $log.log(input);
+
   };
 
 }
