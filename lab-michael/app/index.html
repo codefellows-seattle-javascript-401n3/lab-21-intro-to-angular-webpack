@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="cowsayDemoApp">
+  <head>
+    <title> Welcome to the Cowsay Client </title>
+  </head>
+
+  <body>
+    <section ng-controller="CowsayController">
+    <h1> {{cowsayCtrl.title}} </h1>
+      <input type="text" ng-model="cowsayCtrl.text">
+      <button ng-click="cowsayCtrl.helloClick(cowsayCtrl.text)">click me to save</button>
+
+      <pre>
+        {{cowsayCtrl.updateCow(cowsayCtrl.text)}}
+      </pre>
+
+    <h2> Original Cowsay </h2>
+      <pre ng-controller="CowsayController" ng-model="cowsayCtrl.updateCow">
+        {{cowsayCtrl.updateCow(cowsayCtrl.text)}}
+      </pre>
+    </section>
+
+    <!-- <section ng-controller="CowsayController">
+      <h3> {{cowsayCtrl.title}} </h3>
+        <input type="text" ng-model="cowsayCtrl.coolbeans">
+        <p> {{cowsayCtrl.coolbeans}} </p> -->
+    </section>
+  </body>
+</html>
